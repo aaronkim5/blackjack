@@ -15,3 +15,29 @@ var deckOfCards = function() {
 }
 
 deckOfCards();
+
+
+var outcome;
+
+var deal = Math.floor(Math.random() * 40) + 1;
+  if (deal % 2 === 0) {
+    outcome = "even";
+  } else {
+    outcome = "odd";
+  }
+
+
+function deal() {
+  var randomCard = Math.floor(Math.random() * 52) + 1;
+    console.log(randomCard);
+}
+
+var card1 = deal();
+var card2 = deal();
+
+function score() {
+  console.log(card1 + card2);
+}
+
+console.log("You have cards " + card1 + " and " + card2 +
+            " for a score of " + score());
