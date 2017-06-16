@@ -26,18 +26,17 @@ var deal = Math.floor(Math.random() * 40) + 1;
     outcome = "odd";
   }
 
-
-function deal() {
+var deal = function () {
   var randomCard = Math.floor(Math.random() * 52) + 1;
-    console.log(randomCard);
-}
+    return randomCard;
+};
 
 var card1 = deal();
 var card2 = deal();
 
-function score() {
-  console.log(card1 + card2);
-}
+var score = function() {
+  return card1 + card2;
+};
 
 console.log("You have cards " + card1 + " and " + card2 +
             " for a score of " + score());
